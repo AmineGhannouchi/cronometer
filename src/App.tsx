@@ -28,6 +28,7 @@ function App() {
 
   }
 
+  function reset() {setCount(0); setIsRuning(false)}
 
 
 
@@ -36,6 +37,7 @@ function App() {
       <h1>{getTime(count)}</h1>
       <input type="button" value="start" onClick={() => setIsRuning(true)} />
       <input type="button" value="stop" onClick={() => setIsRuning(false)} />
+      <input type="button" value="reset" onClick={() => reset()} />
     </>
   )
 }
